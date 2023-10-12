@@ -1,0 +1,28 @@
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\bin\Debug\net7.0\lab01.exe
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\bin\Debug\net7.0\lab01.deps.json
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\bin\Debug\net7.0\lab01.runtimeconfig.json
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\bin\Debug\net7.0\lab01.dll
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\bin\Debug\net7.0\lab01.pdb
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.AssemblyInfo.cs
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.dll
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\refint\lab01.dll
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.pdb
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\lab01.genruntimeconfig.cache
+C:\Users\User\Desktop\2 курс 1 сем\ООП\lab01\lab01\obj\Debug\net7.0\ref\lab01.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\bin\Debug\net7.0\lab01.exe
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\bin\Debug\net7.0\lab01.deps.json
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\bin\Debug\net7.0\lab01.runtimeconfig.json
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\bin\Debug\net7.0\lab01.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\bin\Debug\net7.0\lab01.pdb
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.AssemblyInfoInputs.cache
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.AssemblyInfo.cs
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.csproj.CoreCompileInputs.cache
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\refint\lab01.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.pdb
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\lab01.genruntimeconfig.cache
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab01\lab01\obj\Debug\net7.0\ref\lab01.dll
