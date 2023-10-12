@@ -1,0 +1,14 @@
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\bin\Debug\net7.0\lab_02.exe
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\bin\Debug\net7.0\lab_02.deps.json
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\bin\Debug\net7.0\lab_02.runtimeconfig.json
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\bin\Debug\net7.0\lab_02.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\bin\Debug\net7.0\lab_02.pdb
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.AssemblyInfoInputs.cache
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.AssemblyInfo.cs
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.csproj.CoreCompileInputs.cache
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\refint\lab_02.dll
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.pdb
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\lab_02.genruntimeconfig.cache
+C:\Users\vacla\OneDrive\Рабочий стол\ООП\lab_02\lab_02\obj\Debug\net7.0\ref\lab_02.dll
