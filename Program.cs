@@ -32,9 +32,9 @@ namespace lab01
                 {
                     checked
                     {
-                        int maxValue = int.MaxValue; 
+                        int maxValue = int.MaxValue;
                         Console.WriteLine($"Значение в блоке checked: {maxValue}");
-                        maxValue++; 
+                        maxValue++;
                         Console.WriteLine($"После увеличения: {maxValue}");
                     }
                 }
@@ -48,9 +48,9 @@ namespace lab01
             {
                 unchecked
                 {
-                    int maxValue = int.MaxValue; 
+                    int maxValue = int.MaxValue;
                     Console.WriteLine($"Значение в блоке unchecked: {maxValue}");
-                    maxValue++; 
+                    maxValue++;
                     Console.WriteLine($"После увеличения: {maxValue}");
                 }
             }
@@ -80,38 +80,49 @@ namespace lab01
                 decimal decValue = 34.345m;
 
                 string strValue = "Michail";
-                string strValue1 = "Litvin";
+                //string strValue1 = "Litvin";
 
                 Console.WriteLine("[[[[[[[[[[[[Булевые[[[[[[[[[[[");
+                isAlive = bool.Parse(Console.ReadLine());
                 Console.WriteLine(isAlive);
+                isDead = bool.Parse(Console.ReadLine());
                 Console.WriteLine(isDead);
+                isRunning = bool.Parse(Console.ReadLine());
                 Console.WriteLine(isRunning);
+                isPaused = bool.Parse(Console.ReadLine());
                 Console.WriteLine(isPaused);
                 Console.WriteLine("[[[[[[[[[[[[[Целые[[[[[[[[[[[[");
+                byteValue = byte.Parse(Console.ReadLine());
                 Console.WriteLine(byteValue);
+                sbyteValue = sbyte.Parse(Console.ReadLine());
                 Console.WriteLine(sbyteValue);
+                shortValue = short.Parse(Console.ReadLine());
                 Console.WriteLine(shortValue);
+                ushortValue = ushort.Parse(Console.ReadLine());
                 Console.WriteLine(ushortValue);
+                intValue = int.Parse(Console.ReadLine());
                 Console.WriteLine(intValue);
+                uintValue = uint.Parse(Console.ReadLine());
                 Console.WriteLine(uintValue);
+                longValue = long.Parse(Console.ReadLine());
                 Console.WriteLine(longValue);
+                ulongValue = ulong.Parse(Console.ReadLine());
                 Console.WriteLine(ulongValue);
                 Console.WriteLine("[[[[[[[[[[[[[Символьный[[[[[[[[[[[");
+                charValue = char.Parse(Console.ReadLine());
                 Console.WriteLine(charValue);
                 Console.WriteLine("[[[[[[[[[[[[[Плавающая точка[[[[[[[[[[[");
+                fValue = float.Parse(Console.ReadLine());
                 Console.WriteLine(fValue);
+                dValue = double.Parse(Console.ReadLine());  
                 Console.WriteLine(dValue);
+                decValue = decimal.Parse(Console.ReadLine());
                 Console.WriteLine(decValue);
                 Console.WriteLine("[[[[[[[[[[[[[Строки[[[[[[[[[[");
-                Console.WriteLine(strValue);
-                Console.WriteLine(strValue1);
-                Console.WriteLine("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[");
-                Console.WriteLine("Введите значение:");
-                intValue = int.Parse(Console.ReadLine());
-                Console.WriteLine($"Новое значение : {intValue}");
-                Console.WriteLine("Введите значение:");
                 strValue = Console.ReadLine();
-                Console.WriteLine($"Новое значение : {strValue}");
+                Console.WriteLine(strValue);
+                Console.WriteLine("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[");
+
                 Console.WriteLine("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[");
 
                 Console.WriteLine("Работа с классом Convert и явн и неявн привидения");
@@ -146,12 +157,12 @@ namespace lab01
                 Console.WriteLine(decimalValue1);
 
                 int intValue4 = 12345;
-                long longValue1 = intValue;
+                long longValue1 = intValue4;
                 Console.WriteLine(longValue1);
 
-                string str = null;
-                string result = Convert.ToString(str);
-                Console.WriteLine(result);
+                int myInt = 123;
+                decimal myDecimal = myInt;
+                Console.WriteLine(myDecimal);
 
                 int iValue = 234;
                 float flValue = iValue;
@@ -211,7 +222,7 @@ namespace lab01
                     Console.WriteLine("Nullable bool is null");
                 }
 
-                
+
             }
 
             void zadanie2()
@@ -350,6 +361,10 @@ namespace lab01
                 {
                     Console.WriteLine("Позиция вне допустимого диапазона.");
                 }
+                foreach (string item in stroki)
+                {
+                    Console.WriteLine(item);
+                }
 
                 double[][] jaggedArray = new double[][] {
                 new double[] { 1.1, 1.2 },
@@ -392,7 +407,7 @@ namespace lab01
                 Console.WriteLine(t1.Item3);
                 Console.WriteLine(t1.Item4);
 
-                var (item1 , item2 , item3 , item4 , item5 ) = t1;
+                var (item1, item2, item3, item4, item5) = t1;
 
                 Console.WriteLine($"item1: {item1}");
                 Console.WriteLine($"item2: {item2}");
@@ -403,12 +418,9 @@ namespace lab01
                 (int, char, string, ulong) t2 = (234, 'C', "Sarah", 16256734);
                 (int, char, string, ulong) t3 = (56, 'B', "Tony", 66667676);
 
-                Console.WriteLine(Equals(t2 , t3));
-
-
-
+                Console.WriteLine(Equals(t2, t3));
             }
-            
+
             do
             {
                 Console.WriteLine("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[");
@@ -416,7 +428,8 @@ namespace lab01
                 Console.WriteLine("2 Задание - Строки и работа с ними");
                 Console.WriteLine("3 Задание - Массивы");
                 Console.WriteLine("4 Задание - Кортежи");
-                Console.WriteLine("5 Задание - функции");
+                Console.WriteLine("5 Задание - Функции");
+                Console.WriteLine("6 Задание - cheked/uncheked");
                 Console.WriteLine("0 - Выход");
                 Console.WriteLine("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[");
                 chose = int.Parse(Console.ReadLine());
@@ -439,10 +452,8 @@ namespace lab01
                         int[] numbers = { 10, 5, 7, 3, 15 };
                         string text = "Hello, World!";
 
-                        // Вызываем локальную функцию и получаем кортеж
                         var result = CalculateValues(numbers, text);
 
-                        // Выводим результаты
                         Console.WriteLine($"Максимальный элемент массива: {result.max}");
                         Console.WriteLine($"Минимальный элемент массива: {result.min}");
                         Console.WriteLine($"Сумма элементов массива: {result.sum}");
@@ -455,9 +466,7 @@ namespace lab01
                     case 0:
                         break;
                 }
-
             } while (chose != 0);
-
         }
     }
 }
