@@ -23,6 +23,22 @@ namespace lab_02
             public int LocalCallMinutes { get; set; }
             public int LongDistanceCallMinutes { get; set; }
 
+            public Phone(string surname, string firstName, string lastName)
+                : this(surname, firstName, lastName, "", "", 0, 0, 0, 0)
+            {
+            }
+
+            public Phone(string surname, string firstName, string lastName, string address, string creditCardNumber)
+                : this(surname, firstName, lastName, address, creditCardNumber, 0, 0, 0, 0)
+            {
+            }
+
+            private Phone(int id)
+            {
+                ID = id;
+                objectCount++;
+            }
+
             public Phone(string surname, string firstName, string lastName, 
                 string address, string creditCardNumber, decimal debit = 0, 
                 decimal credit = 0, int localCallMinutes = 0 , int longDistanceCallMinutes = 0) 
@@ -54,9 +70,10 @@ namespace lab_02
 
             public static void DisplayClassInfo()
             {
-                Console.WriteLine("Информация :");
-                Console.WriteLine($"Кол-во созданных объектов:{objectCount}");
+                Console.WriteLine("Информация:");
+                Console.WriteLine($"Кол-во созданных объектов: {objectCount}");
             }
+
 
             public static bool operator ==(Phone phone1, Phone phone2)
             {
@@ -79,14 +96,14 @@ namespace lab_02
                 return false;
             }
 
-            public override int GetHashCode()
+            public static Phone CreatePhoneWithID(int id)
             {
-                return ID;
+                return new Phone(id);
             }
 
             public override string ToString()
             {
-                return $"{Surname} {FirstName} {LastName} (ID: {ID})";
+                return $"{Surname} {FirstName} {LastName} Внутригородских: {LocalCallMinutes}min Междугородних: {LongDistanceCallMinutes}min (ID: {ID})";
             }
         }
         static void Main(string[] args)
@@ -95,16 +112,19 @@ namespace lab_02
 
             Phone[] phones = new Phone[]
             {
-            new Phone("Smith", "John", "Doe", "123 Main St", "1234-5678-9012-3456", 100, 50, 30, 20),
-            new Phone("Johnson", "Alice", "Smith", "456 Elm St", "9876-5432-1234-5678", 200, 0, 40, 10),
-            new Phone("Brown", "Robert", "Jones", "789 Oak St", "5678-1234-4321-8765", 50, 100, 10, 50)
+                new Phone("Smith", "John", "Doe", "123 Main St", "1234-5678-9012-3456", 100, 50, 30, 20),
+                new Phone("Johnson", "Alice", "Smith", "456 Elm St", "9876-5432-1234-5678", 200, 0, 40, 10),
+                new Phone("Brown", "Robert", "Jones", "789 Oak St", "5678-1234-4321-8765", 50, 100, 10, 50),
+                new Phone("White", "Betty", "Miller"),
+                new Phone("Black", "James", "Johnson", "111 Pine St", "9999-8888-7777-6666"),
+                Phone.CreatePhoneWithID(999) // Используем закрытый конструктор
             };
 
             // a) Сведения об абонентах, у которых время внутригородских разговоров превышает заданное;
             int maxLocalMinutes = 25;
             var abonentsWithExcessiveLocalCalls = phones.Where(p => p.LocalCallMinutes > maxLocalMinutes).ToArray();
 
-            Console.WriteLine($"Abonents with excessive local call minutes (more than {maxLocalMinutes} minutes):");
+            Console.WriteLine($"Абоненты у которых время внутригородских разговоров (более чем {maxLocalMinutes} минут):");
             foreach (var abonent in abonentsWithExcessiveLocalCalls)
             {
                 Console.WriteLine(abonent);
@@ -113,7 +133,7 @@ namespace lab_02
             // b) Сведения об абонентах, которые пользовались междугородной связью;
             var abonentsWithLongDistanceCalls = phones.Where(p => p.LongDistanceCallMinutes > 0).ToArray();
 
-            Console.WriteLine("\nAbonents who made long distance calls:");
+            Console.WriteLine("\nАбоненты сделавшие междугородные звонки:");
             foreach (var abonent in abonentsWithLongDistanceCalls)
             {
                 Console.WriteLine(abonent);
